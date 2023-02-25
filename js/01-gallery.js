@@ -10,12 +10,14 @@ const setNewItemsElements = galleryItems
     src="${elem.preview}"
     data-source="${elem.original}"
     alt="${elem.description}"/>
+    </a>
     </div>`;
   })
-  .join(" ");
+  .join("");
 console.log(setNewItemsElements);
 getContainGallary.insertAdjacentHTML("beforeend", setNewItemsElements);
-getContainGallary.style.display = "flex";
+
+
 
 
 
